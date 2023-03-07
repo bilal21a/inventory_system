@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {return view('user.dashboard');});
+Route::get('/',function () {return view('auth.login');});
+Route::get('/customer',[CustomerController::class, 'customer'])->name('customer');
+Route::get('/customer/add_customer',[CustomerController::class, 'add_customer'])->name('add_customer');
+Route::get('/customer/edit_customer',[CustomerController::class, 'edit_customer'])->name('edit_customer');
+Route::get('/product',[ProductsController::class, 'product'])->name('product');
+Route::get('/user_management',[UserController::class, 'user_management'])->name('user_management');
+
+
+
 
 Auth::routes();
 

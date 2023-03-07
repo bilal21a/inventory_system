@@ -12,8 +12,8 @@
         <div class="row">
             <!-- Title Start -->
             <div class="col-12 col-md-7">
-                <h1 class="mb-0 pb-0 display-4" id="title">App Activity</h1>
-               
+                <h1 class="mb-0 pb-0 display-4" id="title">User Managment</h1>
+
             </div>
         </div>
     </div>
@@ -27,9 +27,12 @@
 
                     @php
                         $tableName = 'app_block';
-                        $tableData = ['id', 'Logo', 'messages.Name', 'messages.Package', 'messages.Usage Time', 'change status'];
+                        $tableData = ['id', 'user', 'role', 'last login', 'status', 'joined date'];
                     @endphp
                     @include('common.table.table')
+
+
+                    
                 </div>
             </div>
         </div>

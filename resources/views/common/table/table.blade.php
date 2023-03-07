@@ -13,6 +13,57 @@
                     @endforeach
                 </tr>
             </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                    <td>Lorem, ipsum.</td>
+                </tr>
+
+            </tbody>
         </table>
     </div>
     <!-- Table End -->
