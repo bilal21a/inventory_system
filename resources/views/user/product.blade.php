@@ -17,6 +17,12 @@
             </div>
         </div>
     </div>
+    <a href="#" class="btn btn-primary">Add New Product</a>
+    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#closeButtonOutExample">Add Products in
+        Bulk</a>
+    <a href="#" class="btn btn-light">Export CSV</a>
+    <a href="#" class="btn btn-light btn-sm">Sync</a>
+    <a href="#" class="btn btn-light btn-sm">Mark All</a>
 
     <div class="row">
 
@@ -36,7 +42,32 @@
 
     </div>
 
+    <section class="scroll-section" id="closeButtonOut">
+        <div class="card mb-5">
+            <div class="card-body">
+                <!-- Button Trigger -->
+
+                <!-- Modal -->
+                <div class="modal fade modal-close-out" id="closeButtonOutExample" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabelCloseOut" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabelCloseOut">Add Products In Bulk</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">...</div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Content End -->
 @endsection
-
-
