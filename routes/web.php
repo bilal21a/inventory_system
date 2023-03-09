@@ -16,12 +16,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',function () {return view('auth.login');});
-Route::get('/customer',[CustomerController::class, 'customer'])->name('customer');
-Route::get('/customer/add_customer',[CustomerController::class, 'add_customer'])->name('add_customer');
-Route::get('/customer/edit_customer',[CustomerController::class, 'edit_customer'])->name('edit_customer');
-Route::get('/product',[ProductsController::class, 'product'])->name('product');
-Route::get('/user_management',[UserController::class, 'user_management'])->name('user_management');
+Route::get('/', function () {
+    return view('auth.login');
+});
+// ----------------customer---------------------
+Route::get('/customer', [CustomerController::class, 'customer'])->name('customer');
+Route::get('/customer/add_customer', [CustomerController::class, 'add_customer'])->name('add_customer');
+Route::get('/customer/edit_customer', [CustomerController::class, 'edit_customer'])->name('edit_customer');
+
+// ----------------customer End---------------------
+
+// ----------------Products---------------------
+
+Route::get('/product', [ProductsController::class, 'product'])->name('product');
+Route::get('/product/add_product', [ProductsController::class, 'add_product'])->name('add_product');
+Route::get('/product/edit_product', [ProductsController::class, 'edit_product'])->name('edit_product');
+// ----------------Products End---------------------
+
+Route::get('/user_management', [UserController::class, 'user_management'])->name('user_management');
 
 
 

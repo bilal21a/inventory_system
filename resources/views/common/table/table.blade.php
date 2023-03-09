@@ -15,52 +15,52 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><input type="checkbox" style="font-size: 20px"></td>
+                    <td><input type="checkbox" class=" check" style="font-size: 20px"></td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
-                    <td><a href="{{route('edit_customer')}}"><i class="bi bi-pen"></i></a>
+                    <td><a href="{{ route('edit_customer') }}"><i class="bi bi-pen"></i></a>
                         <a href=""><i class="bi bi-trash text-danger"></i></a>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" style="font-size: 20px"></td>
+                    <td><input type="checkbox" class=" check" style="font-size: 20px"></td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
-                    <td><a href="{{route('edit_customer')}}"><i class="bi bi-pen"></i></a>
+                    <td><a href="{{ route('edit_customer') }}"><i class="bi bi-pen"></i></a>
                         <a href=""><i class="bi bi-trash text-danger"></i></a>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" style="font-size: 20px"></td>
+                    <td><input type="checkbox" class=" check" style="font-size: 20px"></td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
-                    <td><a href="{{route('edit_customer')}}"><i class="bi bi-pen"></i></a>
+                    <td><a href="{{ route('edit_customer') }}"><i class="bi bi-pen"></i></a>
                         <a href=""><i class="bi bi-trash text-danger"></i></a>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" style="font-size: 20px"></td>
+                    <td><input type="checkbox" class=" check" style="font-size: 20px"></td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
-                    <td><a href="{{route('edit_customer')}}"><i class="bi bi-pen"></i></a>
+                    <td><a href="{{ route('edit_customer') }}"><i class="bi bi-pen"></i></a>
                         <a href=""><i class="bi bi-trash text-danger"></i></a>
                     </td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" style="font-size: 20px"></td>
+                    <td><input type="checkbox" class=" check" style="font-size: 20px"></td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
                     <td>Lorem, ipsum.</td>
-                    <td><a href="{{route('edit_customer')}}"><i class="bi bi-pen"></i></a>
+                    <td><a href="{{ route('edit_customer') }}"><i class="bi bi-pen"></i></a>
                         <a href=""><i class="bi bi-trash text-danger"></i></a>
                     </td>
                 </tr>

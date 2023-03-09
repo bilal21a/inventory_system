@@ -17,12 +17,17 @@
             </div>
         </div>
     </div>
-    <a href="#" class="btn btn-primary">Add New Product</a>
+    <a href="{{ route('add_product') }}" class="btn btn-primary">Add New Product</a>
     <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#closeButtonOutExample">Add Products in
         Bulk</a>
     <a href="#" class="btn btn-light">Export CSV</a>
     <a href="#" class="btn btn-light btn-sm">Sync</a>
-    <a href="#" class="btn btn-light btn-sm">Mark All</a>
+    <a class="btn btn-light all_select">
+        Mark All
+
+        <input type="checkbox" name="check_data" class="all_select mark_all " style=" margin-left:5px; cursor:pointer;"
+            id="select-all" {{-- value="true" --}} />
+    </a>
 
     <div class="row">
 
@@ -70,4 +75,14 @@
     </section>
 
     <!-- Content End -->
+@endsection
+@section('js_after')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".all_select").click(function() {
+                $("input:checkbox").prop('checked', $(this).prop("checked"));
+            });
+        });
+    </script>
 @endsection

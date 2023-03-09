@@ -19,11 +19,17 @@
     </div>
 
     <a href="{{ route('add_customer') }}" class="btn btn-primary">Add New Customer</a>
-    <a  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#closeButtonOutExample">Add Customers in
+    <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#closeButtonOutExample">Add Customers in
         Bulk</a>
     <a href="#" class="btn btn-light">Export CSV</a>
     <a href="#" class="btn btn-light btn-sm">Sync</a>
-    <a href="#" class="btn btn-light btn-sm">Mark All</a>
+    {{-- <a href="#" class="btn btn-light btn-sm mark_all">Mark All</a> --}}
+    <a class="btn btn-light all_select">
+        Mark All
+
+        <input type="checkbox" name="check_data" class=" mark_all " style=" margin-left:5px; cursor:pointer;"
+            id="select-all" {{-- value="true" --}} />
+    </a>
     <div class="row">
 
         <div class="col-12 col-sm-12">
@@ -70,4 +76,14 @@
     </section>
 
     <!-- Content End -->
+@endsection
+@section('js_after')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".mark_all").click(function() {
+                $("input:checkbox").prop('checked', $(this).prop("checked"));
+            });
+        });
+    </script>
 @endsection

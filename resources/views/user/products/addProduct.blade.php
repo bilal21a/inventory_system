@@ -1,14 +1,19 @@
 @extends('layouts.app')
 @section('content')
-    <div class="post d-flex flex-column-fluid" id="kt_post">
-        <div id="kt_content_container" class="container  bg-white">
-            <div class="row gy-5 g-xl-8">
-                <div class="col-md-12">
-                    <div class="mb-13 text-center mt-13">
-                        <h1 class="mb-3">Edit Details</h1>
-                    </div>
-                </div>
+    <div class="page-title-container">
+        <div class="row">
+            <!-- Title Start -->
+            <div class="col-12 col-md-7">
+                <h1 class="mb-0 pb-0 display-4" id="title">Add New Product</h1>
+
             </div>
+        </div>
+    </div>
+
+
+    <div class="post d-flex flex-column-fluid mt-5" id="kt_post">
+        <div id="kt_content_container" class="container  bg-white">
+
             @if ($errors->any())
                 <div class="alert alert-danger offset-1 pb-5">
                     <ul>

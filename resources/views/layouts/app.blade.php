@@ -70,7 +70,7 @@
 <body>
     @include('layouts.partials.header')
     <div id="root">
-        @include('layouts.partials.sidebar')
+        {{-- @include('layouts.partials.sidebar') --}}
         @include('layouts.partials.notification')
 
         <main>
@@ -116,8 +116,7 @@
 
     <script src="{{ asset('acron/js/vendor/datatables.min.js') }}"></script>
     <script src="{{ asset('acron/js/vendor/moment-with-locales.min.js') }}"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.min.css"
         integrity="sha512-cyIcYOviYhF0bHIhzXWJQ/7xnaBuIIOecYoPZBgJHQKFPo+TOBA+BY1EnTpmM8yKDU4ZdI3UGccNGCEUdfbBqw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.9/sweetalert2.all.min.js"
