@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\StoreController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +36,9 @@ Route::get('/product/edit_product', [ProductsController::class, 'edit_product'])
 // ----------------Products End---------------------
 
 Route::get('/user_management', [UserController::class, 'user_management'])->name('user_management');
+Route::get('/role', [RoleController::class, 'role_view'])->name('role_view');
+Route::get('/role/role_details', [RoleController::class, 'role_details'])->name('role_details');
+Route::get('/stores', [StoreController::class, 'stores_view'])->name('stores_view');
 
 
 

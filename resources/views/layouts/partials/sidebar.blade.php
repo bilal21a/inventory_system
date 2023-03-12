@@ -29,7 +29,7 @@
 
         @php
 
-            $user = "dummy@gmail.com";
+            $user = 'dummy@gmail.com';
             $user = explode('@', $user);
             $user_name = substr($user[0], 0, 10);
 
@@ -89,31 +89,44 @@
         <div class="menu-container flex-grow-1">
             <ul id="menu" class="menu">
                 <li>
-                    <a class="{{ request()->is('customer') ? 'active' : '' }}" href="{{route('customer')}}">
+                    <a class="{{ request()->is('customer') ? 'active' : '' }}" href="{{ route('customer') }}">
                         {{-- <i data-acorn-icon="mobile" class="mobile" data-acorn-size="18"></i> --}}
                         <span class="label">Customer</span>
                     </a>
                 </li>
                 <li>
-                    <a class="{{ request()->is('product') ? 'active' : '' }}" href="{{route('product')}}">
+                    <a class="{{ request()->is('product') ? 'active' : '' }}" href="{{ route('product') }}">
                         {{-- <i data-acorn-icon="mobile" class="mobile" data-acorn-size="18"></i> --}}
                         <span class="label">Products</span>
                     </a>
                 </li>
                 <li>
-                    <a class="{{ request()->is('user_management') ? 'active' : '' }}" href="{{route('user_management')}}">
+                    <a class="{{ request()->is('stores') ? 'active' : '' }}" href="{{ route('stores_view') }}">
                         {{-- <i data-acorn-icon="mobile" class="mobile" data-acorn-size="18"></i> --}}
+                        <span class="label">Store</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#user_management" data-href="Dashboards.html">
                         <span class="label">User Management</span>
                     </a>
+                    <ul id="user_management">
+                        <li>
+                            <a class="{{ request()->is('user_management') ? 'active' : '' }}"
+                                href="{{ route('user_management') }}">
+                                {{-- <i data-acorn-icon="mobile" class="mobile" data-acorn-size="18"></i> --}}
+                                <span class="label">User Management</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="{{ request()->is('role') ? 'active' : '' }}" href="{{route('role_view')}}">
+                                {{-- <i data-acorn-icon="mobile" class="mobile" data-acorn-size="18"></i> --}}
+                                <span class="label">Roles</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a class="{{ request()->is('devices') ? 'active' : '' }}" href="#">
-                        {{-- <i data-acorn-icon="mobile" class="mobile" data-acorn-size="18"></i> --}}
-                        <span class="label">Roles</span>
-                    </a>
-                </li>
-
-
             </ul>
         </div>
         <div class="mobile-buttons-container">
