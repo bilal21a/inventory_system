@@ -29,7 +29,7 @@
                 @csrf
 
 
-                @include('user.customers.form.createOrUpdateCustomer')
+                @include('user.products.form.createOrUpdateproduct')
 
 
             </form>

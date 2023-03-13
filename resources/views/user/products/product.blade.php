@@ -4,6 +4,10 @@
         .data-table-rows table.dataTable td .form-check {
             pointer-events: auto;
         }
+
+        .csv_content {
+            display: none;
+        }
     </style>
 @endsection
 @section('content')
@@ -20,7 +24,7 @@
     <a href="{{ route('add_product') }}" class="btn btn-primary">Add New Product</a>
     <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#closeButtonOutExample">Add Products in
         Bulk</a>
-    <a href="{{ asset('Defualt/customer.csv') }}" class="btn btn-light">Export CSV</a>
+    <a href="{{ asset('Defualt/PRODUCTS.csv') }}" class="btn btn-light">Export CSV</a>
     <a href="{{ route('customer') }}" class="btn btn-light btn-sm">
         <i class="bi bi-arrow-repeat"></i>
         Sync</a>
@@ -52,8 +56,8 @@
                     @endphp
                     @include('common.table.table')
                 </div>
-                 {{-- CSV TABLE --}}
-                 <div class="data-table-rows  csv_content">
+                {{-- CSV TABLE --}}
+                <div class="data-table-rows  csv_content">
                     <!-- Controls Start -->
 
                     @php
@@ -67,32 +71,44 @@
 
     </div>
 
-    <section class="scroll-section" id="closeButtonOut">
-        <div class="card mb-5">
-            <div class="card-body">
-                <!-- Button Trigger -->
+    <div class="card-body">
+        <!-- Button Trigger -->
 
-                <!-- Modal -->
-                <div class="modal fade modal-close-out" id="closeButtonOutExample" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalLabelCloseOut" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabelCloseOut">Add Products In Bulk</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
+        <!-- Modal -->
+        <div class="modal fade modal-close-out" id="closeButtonOutExample" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabelCloseOut" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabelCloseOut">Add Products In Bulk</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"><input type="file" name="csv_file" class="form-control" accept=".csv"
+                            required="">
+                        <a href="{{ asset('Defualt/PRODUCTS.csv') }}" data-toggle="tooltip" data-placement="right"
+                            title="" data-bs-original-title="CSV File">
+
+                            <div class="d-flex mt-3">
+                                <div>
+                                    {{-- <i  class="fa fa-2x fa-download " aria-hidden="true"></i> --}}
+                                    <i class="bi bi-cloud-arrow-down" style="color: #4495E8;font-size: 26px; "></i>
+                                </div>
+                                <div style="margin-left: 10px; margin-top:5px; color:#4495E8 ">
+
+                                    <h3>Download Sample</h3>
+                                </div>
                             </div>
-                            <div class="modal-body">...</div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
+                        </a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="load_table()" class="btn btn-primary">Save changes</button>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Content End -->
 @endsection
@@ -157,7 +173,7 @@
                         $('.slim').hide();
                         $('.csv_content').hide();
 
-                        myalert("success", 'Customer Deleted Successfully', 1000);
+                        myalert("success", 'Products Deleted Successfully', 1000);
 
                     },
                 });

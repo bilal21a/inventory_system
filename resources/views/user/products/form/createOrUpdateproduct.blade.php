@@ -6,7 +6,7 @@
             {{-- customer_name --}}
             <div class="d-flex flex-column mb-8 fv-row">
                 <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="required">@lang('Name')</span>
+                    <span class="required">Product Name</span>
                     <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="@lang('Specify_Customer_Name')"></i>
                 </label>
                 <input type="text" class="form-control form-control-solid" placeholder="@lang('Name')"
@@ -17,11 +17,11 @@
             {{-- customer_address --}}
             <div class="d-flex flex-column mb-8 fv-row">
                 <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="">@lang('Address')</span>
+                    <span class="">Product Code</span>
                     <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
                         title="@lang('Specify_address')"></i>
                 </label>
-                <input type="text" class="form-control form-control-solid" placeholder="@lang('Address')"
+                <input type="text" class="form-control form-control-solid" placeholder="Product Code"
                     autocomplete="off" name="customer_address" value="" />
             </div>
 
@@ -29,11 +29,11 @@
             {{-- customer_phone --}}
             <div class="d-flex flex-column mb-8 fv-row">
                 <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="">@lang('Phone')</span>
+                    <span class="">Sale Price</span>
                     <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
                         title="@lang('Specify_phone_number')"></i>
                 </label>
-                <input type="text" class="form-control form-control-solid" placeholder="@lang('Phone')"
+                <input type="text" class="form-control form-control-solid" placeholder="Sale price"
                     autocomplete="off" name="customer_phone" value="" />
             </div>
 
@@ -41,11 +41,11 @@
             {{-- contact_person% --}}
             <div class="d-flex flex-column mb-8 fv-row">
                 <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class=""> @lang('Contact_Person')</span>
+                    <span class=""> Purchase Price</span>
                     <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
                         title="@lang('Specify_Contact_Person')"></i>
                 </label>
-                <input type="text" class="form-control  form-control-solid" placeholder="@lang('Contact_Person')"
+                <input type="text" class="form-control  form-control-solid" placeholder="Purchase Price"
                     autocomplete="off" name="contact_person" value="">
             </div>
 
@@ -53,25 +53,14 @@
             {{-- comment --}}
             <div class="d-flex flex-column mb-8 fv-row">
                 <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="">@lang('Comment')</span>
+                    <span class="">Stock</span>
                     <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
                         title="@lang('Do_Comment')"></i>
                 </label>
-                <input type="text" class="form-control form-control-solid" placeholder="@lang('Comment')"
-                    autocomplete="off" name="comment" value="" />
+                <input type="text" class="form-control form-control-solid" placeholder="Stock" autocomplete="off"
+                    name="comment" value="" />
             </div>
-            {{-- opening_balance --}}
-            <div class="d-flex flex-column mb-8 fv-row">
-                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="">@lang('Current_Balance')</span>
-                    <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-                        title="@lang('Write_down_your_Balance')"></i>
-                </label>
 
-
-                    <input type="text" class="form-control form-control-solid" placeholder="5000" autocomplete="off"
-                        name="current_balance" />
-            </div>
 
 
             {{-- <div class="row mb-6 my-5">
@@ -129,7 +118,7 @@
     </div>
 </div>
 <div class="card-footer d-flex justify-content-end py-6 px-9">
-    <a href="{{ route('customer') }}" class="btn btn-white btn-active-light-primary me-2">
+    <a href="{{ route('product') }}" class="btn btn-white btn-active-light-primary me-2">
         @lang('Discard')
     </a>
     <button class="btn btn-primary btn-save">

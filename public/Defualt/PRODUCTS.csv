@@ -1,0 +1,3 @@
+productname,productcode,grit_number,stock,unit,purchase_price,comments,sale_price,sale_discount_percent,sale_discount,sequence,show_on_web,admin_auth_show_on_web,enabled
+keyboard,key1,0,1,kg,1200,I am comment,1000,10,1,1,0,0,0
+mouse,mose2,101,2,kg,1101,I am comment,1001,11,2,2,1,1,1
